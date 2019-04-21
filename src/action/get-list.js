@@ -5,9 +5,12 @@ class GetList extends Component {
   render() {
     return (
       <div>
-        <h1>Hello World</h1>
         {GetData.map((getDetail, index) => {
-          return <h1>{getDetail.name}</h1>
+          return <div>
+            <h1>{getDetail.id}</h1>
+            <h1>{getDetail.name}</h1>
+            <h1>{getDetail.timestamp}</h1>
+          </div>
         })}
       </div>
     );
