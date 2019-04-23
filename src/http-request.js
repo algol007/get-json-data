@@ -8,7 +8,7 @@ class FetchDemo extends React.Component {
   }
 
   componentDidMount() {
-    axios.get(`http://www.reddit.com/r/${this.props.subreddit}.json`)
+    axios.get('https://api.adrini.com/api/get/channels/443806782782898177?count=8')
       .then(res => {
         const posts = res.data.data.children.map(obj => obj.data);
         this.setState({ posts });

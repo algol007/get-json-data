@@ -8,8 +8,6 @@ class GetList extends Component {
         {GetData.map((getDetail, index) => {
           return <div>
             <h1>{getDetail.id}</h1>
-            <h1>{getDetail.name}</h1>
-            <h1>{getDetail.timestamp}</h1>
           </div>
         })}
       </div>
